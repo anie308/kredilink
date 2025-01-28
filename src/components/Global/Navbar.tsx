@@ -3,7 +3,7 @@
 import { Link } from "react-router-dom"
 import { AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
-
+import { FiPlus } from "react-icons/fi";
 
 function Navbar() {
     const activeUrl = window.location.pathname;
@@ -53,12 +53,14 @@ function Navbar() {
             <div className={`${open ? "left-0" : "left-[-100%]"} h-screen bg-white fixed top-0 w-full z-20 transition-left duration-300 p-[20px]`}>
             
                 <div onClick={()=> setOpen(false)}  className="flex items-center justify-end">
-                    close
+                <FiPlus  className="text-[30px] rotate-45"/>
                 </div>
                 <div className="flex flex-col space-y-[20px]">
 
                 {links.map((link) => (
-                    <Link className={`
+                    <Link
+                    onClick={()=> setOpen(false)} 
+                    className={`
                         ${activeUrl === link.href
                             ? 'text-[#141414] font-[500]'
                             : 'text-[#141414CC]'} text-[25px] font-[400]`
