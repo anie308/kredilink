@@ -10,10 +10,7 @@ function Navbar() {
 
     const [open, setOpen] = useState(false);
     const links = [
-        {
-            name: 'Home',
-            href: '/',
-        },
+       
         {
             name: 'About Us',
             href: '/about',
@@ -25,6 +22,10 @@ function Navbar() {
         {
             name: 'Converter',
             href: '/converter',
+        },
+        {
+            name: 'Support',
+            href: '/support',
         },
 
     ]
