@@ -4,7 +4,7 @@ function AboutHero() {
     return (
         <div className="p-[20px] lg:p-[40px_20px] flex flex-col items-center justify-center">
             <p className="text-[32px] lg:text-[64px] text-[#141414]">Who We Are?</p>
-            <p className="w-full lg:w-[70%] text-center text-[18px]">Kredilink Technologies Limited is a fintech company dedicated to redefining liquidity with low-risk, cost-effective payment solutions. Born in Nigeria with a global vision to help businesses expand without limitations in the international market, we are more than a payment platform - we are your link to seamless, fast, secure, and intelligent financial solutions.</p>
+            <p className="w-full lg:w-[70%] text-center text-[14px] lg:text-[18px]">Kredilink Technologies Limited is a fintech company dedicated to redefining liquidity with low-risk, cost-effective payment solutions. Born in Nigeria with a global vision to help businesses expand without limitations in the international market, we are more than a payment platform - we are your link to seamless, fast, secure, and intelligent financial solutions.</p>
 
             <div className="mt-[40px] overflow-hidden  w-full lg:w-[70%] ">
                 <img src="./about-hero.svg" className="h-[427px] lg:h-[530px] object-cover w-full rounded-[10px]" alt="" />
