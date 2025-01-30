@@ -13,3 +13,18 @@
   background: linear-gradient( #081537, #1E3677 );
 
 }
+
+.select-icon::after{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0 1rem;
+  color: #000;
+  pointer-events: none;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
