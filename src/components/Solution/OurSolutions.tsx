@@ -91,21 +91,27 @@ function OurSolutions() {
               <div className="flex items-center w-full justify-end">
                 <img src="./treasury.svg" className="h-[50px] lg:h-[80px]" alt="" />
               </div>
-              <p className="text-[32px] lg:text-[64px] leading-[35px] lg:leading-[68px]">Treasury Management</p>
-              <p className="mt-[10px]">Comprehensive financial management tools that provide real-time insights, optimize cash flow, and enable strategic financial decision-making.</p>
+              <p className="text-[32px] lg:text-[64px] leading-[35px] lg:leading-[68px]">Savings (Vault)</p>
+              <p className="mt-[10px]">Secure digital savings solutions that offer flexibility, attractive returns, and absolute peace of mind.</p>
 
               <div className="mt-[15px] lg:mt-[30px]">
                 <p className="text-[#141414] text-[20px] lg:text-[32px]">Features</p>
                 <ul className="list-disc mt-[10px] pl-[20px] lg:pl-[40px]">
-                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">Multi-currency tracking
+
+                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">                High-yield savings accounts
+
                   </li>
                   <li className="text-[16px] lg:text-[24px] text-[#141414B2]">
-                    Liquidity optimization</li>
-                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">Advanced forecasting tools
+                    Multi-currency options
                   </li>
-                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">Risk management strategies
+                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">Instant withdrawals
+
                   </li>
-                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">Automated reporting
+                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">Competitive interest rates
+
+                  </li>
+                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">Bank-grade security
+
                   </li>
                 </ul>
               </div>
