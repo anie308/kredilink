@@ -9,6 +9,7 @@ import Seamless from "../components/Home/Seamless"
 import Tailored from "../components/Home/Tailored"
 import Offers from "../components/Home/Offers"
 import HaveQuestions from "../components/Home/HaveQuestions"
+import Feedback from "../components/Home/Feedback"
 
 function Home() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function Home() {
       <Offers/>
       <Tailored/>
       <HaveQuestions />
+      <Feedback/> 
       <Global />
     </Layout>
   )

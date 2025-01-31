@@ -5,7 +5,7 @@ import BottomBar from '../components/Global/BottomBar'
 
 function Layout({ children }: { children: React.ReactNode }) {
     return (
-        <div className='font-rubik'>
+        <div className='font-rubik scroll-smooth'>
             <Navbar />
             {children}
             <Footer />

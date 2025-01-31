@@ -22,7 +22,7 @@ function HaveQuestions() {
             content: "Transparency is one of our biggest promises to you! All fees are clearly communicated upfront with no surprises.",
         },
         {
-            heading: "WHow Fast are International Transfers?",
+            heading: "How Fast are International Transfers?",
             content: "Most transfers are processed the same day, significantly 3x faster than traditional banking systems.",
         },
         {
