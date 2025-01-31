@@ -8,6 +8,7 @@ import HomeHero from "../components/Home/HomeHero"
 import Mission from "../components/Home/Mission"
 import Seamless from "../components/Home/Seamless"
 import Tailored from "../components/Home/Tailored"
+import Offers from "../components/Home/Offers"
 
 function Home() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function Home() {
         </div>
       </div>
       <img src="./line.svg" className="w-full" alt="" />
+      <Offers/>
       <Tailored/>
       <FAQs />
       <Global />
