@@ -2,12 +2,7 @@ import  { useState } from 'react'
 import { FiMinusSquare } from "react-icons/fi";
 function FAQs() {
     const [faq, setFaq] = useState<number | null>(null);
-    // const toggle = (i: React.SetStateAction<number>) => {
-    //   if (faq === i) {
-    //     return setFaq(null);
-    //   }
-    //   setFaq(i);
-    // };
+ 
 
     const toggle = (i: number) => {
         setFaq((prev) => (prev === i ? null : i));

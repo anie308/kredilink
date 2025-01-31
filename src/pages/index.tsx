@@ -3,12 +3,12 @@
 import { useEffect } from "react"
 import Layout from "../layout"
 import Global from "../components/Solution/Global"
-import FAQs from "../components/Support/FAQs"
 import HomeHero from "../components/Home/HomeHero"
 import Mission from "../components/Home/Mission"
 import Seamless from "../components/Home/Seamless"
 import Tailored from "../components/Home/Tailored"
 import Offers from "../components/Home/Offers"
+import HaveQuestions from "../components/Home/HaveQuestions"
 
 function Home() {
   useEffect(() => {
@@ -26,7 +26,7 @@ function Home() {
       <img src="./line.svg" className="w-full" alt="" />
       <Offers/>
       <Tailored/>
-      <FAQs />
+      <HaveQuestions />
       <Global />
     </Layout>
   )
