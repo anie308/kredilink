@@ -1,6 +1,67 @@
 // import React from 'react'
 
+import { useEffect, useState } from "react"
+import axios from "axios";
+import toast from "react-hot-toast";
 function ConverterComp() {
+  const apiUrl = import.meta.env.VITE_APP_API_URL;
+  const apiUrl2 = import.meta.env.VITE_APP_API_URL2;
+  const apiKey = import.meta.env.VITE_APP_API_KEY;
+  const apiKey2 = import.meta.env.VITE_APP_API_KEY2;
+  const [supportedSymbols, setSupportedSymbols] = useState<any[]>([])
+  const [fromCurrency, setFromCurrency] = useState<string>('')
+  const [toCurrency, setToCurrency] = useState<string>('')
+  const [amount, setAmount] = useState<string>("")
+  const [loading, setLoading] = useState<boolean>(false);
+  interface ConversionResult {
+    conversion_result: number;
+    conversion_rate: number;
+    target_code: string;
+    base_code: string;
+    result: string;
+  }
+
+  const [result, setResult] = useState<ConversionResult | null>(null)
+
+  const getSupportedSymbols = async () => {
+    try {
+      const res = await axios.get(`${apiUrl}/symbols?access_key=${apiKey}`)
+      const symbols = res?.data?.symbols
+      setSupportedSymbols(Object.entries(symbols))
+    } catch (error) {
+
+      console.log(error)
+    }
+  }
+
+  const convertCurrency = async () => {
+    try {
+      if (!fromCurrency.trim() || !toCurrency.trim() || !amount.trim()) {
+        toast.error('Please fill all fields')
+      } else {
+        setLoading(true)
+        console.log(fromCurrency, toCurrency, amount)
+        const res = await axios.get(`${apiUrl2}/${apiKey2}/pair/${fromCurrency}/${toCurrency}/${amount}`);
+        setResult(res?.data)
+        setLoading(false)
+        // const symbols = res?.data?.symbols
+        // setSupportedSymbols(Object.entries(symbols))
+      }
+
+    } catch (error) {
+
+      console.log(error)
+      setLoading(false)
+    }
+  }
+
+  useEffect(() => {
+    getSupportedSymbols()
+  }, [])
+
+  const addCommas = (num: any) => {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
   return (
     <div className="flex flex-col justify-center items-center p-[40px_20px] lg:p-[60px_40px]">
       <p className="text-[32px] lg:text-[64px] text-[#141414]">Kredilink Fiat Converter</p>
@@ -22,22 +83,28 @@ function ConverterComp() {
           <div className="w-full mt-[20px] flex flex-col space-y-[20px]">
             <div >
               <p className="mb-[5px] text-white">Fiat Currency From</p>
-              <select name="" id="" className="h-[50px] w-full rounded-[10px] bg-white outline-none px-[10px]">
+              <select  value={fromCurrency}
+                onChange={(e) => setFromCurrency(e.target.value)} name="" id="" className="h-[50px] w-full rounded-[10px] bg-white outline-none px-[10px] custom-select ">
                 <option value="">Select a Currency</option>
-                <option value="Naira">Naira</option>
+                {supportedSymbols.map(([key], index) => (
+                  <option key={index} value={key}>{key}</option>
+                ))}
               </select>
             </div>
             <div>
               <p className="mb-[5px] text-white">To</p>
-              <select name="" id="" className="h-[50px] w-full rounded-[10px] bg-white outline-none px-[10px]">
+              <select value={toCurrency}
+                onChange={(e) => setToCurrency(e.target.value)} name="" id="" className="h-[50px] w-full rounded-[10px] bg-white outline-none px-[10px] custom-select ">
                 <option value="">Select a Currency</option>
-                <option value="Naira">Naira</option>
+                {supportedSymbols.map(([key], index) => (
+                  <option key={index} value={key}>{key}</option>
+                ))}
 
               </select>
             </div>
             <div>
               <p className="mb-[5px] text-white">Fiat Amount</p>
-              <input name="" id="" placeholder="Enter Amount" className="h-[50px] w-full rounded-[10px] bg-white outline-none px-[10px]">
+              <input value={amount} onChange={(e) => setAmount(e.target.value)} name="" id="" placeholder="Enter Amount" className="h-[50px] w-full rounded-[10px] bg-white outline-none px-[10px]">
 
 
               </input>
@@ -51,11 +118,15 @@ function ConverterComp() {
             <div>
               <div className="mb-[50px]">
                 <p className="text-[24px] font-[600] text-[#141414]">You will get!</p>
-                <p className="text-[64px] font-[700]">₦ 0</p>
-                <p className="text-[#141414CC] font-[600] text-[24px]">Nigerian Naira</p>
+                <p className="text-[60px] font-[700]">{addCommas(result?.conversion_result) || "0"}</p>
+                <p className="text-[#141414CC] font-[600] text-[24px]">
+                  {supportedSymbols.find(([key]) => key === toCurrency)?.[1] || ""}
+                </p>
               </div>
               <p className="text-[#141414CC]">Seamlessly bridge the world of digital and traditional currencies with us today</p>
-              <button className="h-[50px] rounded-[10px] mt-[20px] w-full bg-[#162A5F] text-white">Convert</button>
+              <button disabled={loading} onClick={convertCurrency} className="h-[50px] rounded-[10px] mt-[20px] w-full bg-[#162A5F] text-white">
+                {loading ? 'Converting...' : 'Convert'}
+              </button>
             </div>
           </div>
 
