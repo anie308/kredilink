@@ -28,3 +28,7 @@
 .scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.home-gradient {
+  background: linear-gradient(to bottom, #081537, #00A452);
+}
