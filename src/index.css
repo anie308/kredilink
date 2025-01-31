@@ -32,3 +32,7 @@
 .home-gradient {
   background: linear-gradient(to bottom, #081537, #00A452);
 }
+
+.tailor-gradient {
+  background: linear-gradient(to right, #081537, #141414);
+}

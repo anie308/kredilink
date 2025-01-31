@@ -7,11 +7,11 @@ import FAQs from "../components/Support/FAQs"
 import HomeHero from "../components/Home/HomeHero"
 import Mission from "../components/Home/Mission"
 import Seamless from "../components/Home/Seamless"
+import Tailored from "../components/Home/Tailored"
 
 function Home() {
   useEffect(() => {
     window.scrollTo(0, 0)
-
   }, [])
   return (
     <Layout>
@@ -22,6 +22,8 @@ function Home() {
           <Seamless/>
         </div>
       </div>
+      <img src="./line.svg" className="w-full" alt="" />
+      <Tailored/>
       <FAQs />
       <Global />
     </Layout>
