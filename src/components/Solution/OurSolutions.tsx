@@ -6,8 +6,40 @@ function OurSolutions() {
       <div className="sol-gradient p-[40px_20px] rounded-[10px] lg:rounded-[20px] flex flex-col items-center justify-center">
         <p className="text-[32px] lg:text-[64px]">Our Solutions</p>
         <div className="w-full lg:w-[70%] mt-[20px] ">
-          <div className="bg-[#F2F7F6] rounded-[10px] lg:rounded-[20px] text-black p-[40px]">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore praesentium beatae ullam dolorem accusantium molestias possimus impedit est! Excepturi aliquid, illum eveniet magni veritatis ullam non est voluptas architecto sequi!
+          <div className="bg-[#F2F7F6] rounded-[10px] lg:rounded-[20px] text-black p-[20px] lg:p-[40px]">
+            <div className="flex items-center w-full justify-end">
+              <img src="./treasury.svg" className="h-[50px] lg:h-[80px]" alt="" />
+            </div>
+            <div className="grid lg:grid-cols-2">
+              <div>
+                <p className="text-[32px] lg:text-[64px] leading-[35px] lg:leading-[68px]">Reliable Liquidity <br className="hidden lg:block" /> Provision</p>
+                <p className="mt-[10px]">Rapid, secure settlement services that simplify international trade and financial transactions.</p>
+
+              </div>
+              <div className="">
+                <p className="text-[#141414] text-[20px] lg:text-[32px]">Features</p>
+                <ul className="list-disc mt-[10px] pl-[20px] lg:pl-[40px]">
+
+
+
+
+                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">                Multiple bill types support
+                  </li>
+                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">
+                    Scheduled and recurring payments
+
+                  </li>
+                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">International bill management
+
+                  </li>
+                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">Real-time payment confirmations
+
+                  </li>
+                  <li className="text-[16px] lg:text-[24px] text-[#141414B2]">User-friendly interface
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div className="mt-[40px] grid gap-[40px] lg:grid-cols-2 lg:pb-[40px]">
             <div className="bg-[#F2F7F6] rounded-[10px] lg:rounded-[20px] text-black p-[20px] lg:p-[40px]">

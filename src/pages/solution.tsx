@@ -3,6 +3,7 @@
 import { useEffect } from "react"
 import OurSolutions from "../components/Solution/OurSolutions"
 import Layout from "../layout"
+import Global from "../components/Solution/Global"
 
 function Solution() {
    useEffect(() => {
@@ -12,6 +13,7 @@ function Solution() {
   return (
     <Layout>
       <OurSolutions/>
+      <Global/>
     </Layout>
   )
 }
