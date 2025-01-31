@@ -5,7 +5,7 @@ function Available() {
     <div className="p-[40px_20px] lg:p-[60px_40px] flex flex-col items-center justify-center">
       <p className="text-center text-[30px] lg:text-[64px] leading-[38px] lg:leading-[70px]">We’re always available to <br className="hidden lg:block" /> answer your questions</p>
 
-      <div className="w-full lg:w-[60%] mt-[20px] grid lg:grid-cols-4 gap-[20px]">
+      <div className="w-full md:w-[60%] xl:w-[80%] mt-[20px] grid lg:grid-cols-4 gap-[20px]">
         <div className="p-[20px] bg-[#F2F7F6] rounded-[20px] flex flex-col items-start">
           <div>
             <img src="./consult.svg" alt="" />
