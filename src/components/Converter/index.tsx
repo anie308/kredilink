@@ -1,6 +1,6 @@
 // import React from 'react'
 
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 import axios from "axios";
 import toast from "react-hot-toast";
 function ConverterComp() {
@@ -23,16 +23,16 @@ function ConverterComp() {
 
   const [result, setResult] = useState<ConversionResult | null>(null)
 
-  const getSupportedSymbols = async () => {
+  const getSupportedSymbols = useCallback(async () => {
     try {
-      const res = await axios.get(`${apiUrl}/symbols?access_key=${apiKey}`)
-      const symbols = res?.data?.symbols
-      setSupportedSymbols(Object.entries(symbols))
+      const res = await axios.get(`${apiUrl}/symbols?access_key=${apiKey}`);
+      if (res?.data?.symbols) {
+        setSupportedSymbols(Object.entries(res.data.symbols));
+      }
     } catch (error) {
-
-      console.log(error)
+      console.error("Error fetching supported symbols:", error);
     }
-  }
+  }, [apiUrl, apiKey]);
 
   const convertCurrency = async () => {
     try {
@@ -43,21 +43,20 @@ function ConverterComp() {
         console.log(fromCurrency, toCurrency, amount)
         const res = await axios.get(`${apiUrl2}/${apiKey2}/pair/${fromCurrency}/${toCurrency}/${amount}`);
         setResult(res?.data)
-        setLoading(false)
         // const symbols = res?.data?.symbols
         // setSupportedSymbols(Object.entries(symbols))
       }
 
     } catch (error) {
-
-      console.log(error)
-      setLoading(false)
+      console.error("Error converting currency:", error);
+    } finally {
+      setLoading(false);
     }
   }
 
   useEffect(() => {
     getSupportedSymbols()
-  }, [])
+  }, [getSupportedSymbols])
 
   const addCommas = (num: any) => {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
