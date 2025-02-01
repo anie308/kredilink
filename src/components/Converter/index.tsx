@@ -27,7 +27,7 @@ function ConverterComp() {
     try {
       const res = await axios.get(`${apiUrl}/symbols?access_key=${apiKey}`);
       if (res?.data?.symbols) {
-        setSupportedSymbols(Object.entries(res.data.symbols));
+        setSupportedSymbols(Object.entries(res?.data?.symbols));
       }
     } catch (error) {
       console.error("Error fetching supported symbols:", error);
@@ -59,7 +59,7 @@ function ConverterComp() {
   }, [getSupportedSymbols])
 
   const addCommas = (num: any) => {
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return num?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
   return (
     <div className="flex flex-col justify-center items-center p-[40px_20px] lg:p-[60px_40px]">
