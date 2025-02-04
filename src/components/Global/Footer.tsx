@@ -16,7 +16,7 @@ function Footer() {
           <p className="mt-[20px]">Kredilink is a product of Kredilink Technologies Limited</p>
 
           <p className="mt-[30px] lg:mt-[40px]">Kredilink Technologies Limited <br className="hidden lg:block" />
-            Lekki, Lagos, Nigeria</p>
+            39 Alfred Rewane Rd, Ikoyi, Lagos</p>
         </div>
 
       </div>

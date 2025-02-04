@@ -36,7 +36,6 @@ function HaveQuestions() {
 
     return (
         <div className='p-[40px_20px] lg:p-[60px_40px] flex flex-col items-center justify-center'>
-            <img src="./line.svg" className="w-full" alt="" />
             <div className='flex flex-col lg:flex-row  border-[#F0F0F0]  items-center w-full lg:w-[75%] gap-[40px] '>
                 <div className='w-full lg:w-[40%] '>
                     <p className='text-[30px] lg:text-[40px] italic font-[600]'>Have Questions?

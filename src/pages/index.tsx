@@ -17,18 +17,23 @@ function Home() {
   }, [])
   return (
     <Layout>
-      <div className="p-[40px_10px] lg:p-[40px]">
+      <div className="p-[20px_10px] lg:p-[40px]">
         <div className="home-gradient    p-[10px] lg:p-[40px] rounded-[20px] text-white">
           <HomeHero />
-          <Mission/>
-          <Seamless/>
+          <Mission />
+          <Seamless />
         </div>
       </div>
-      <img src="./line.svg" className="w-full" alt="" />
-      <Offers/>
-      <Tailored/>
+      <img src="./line.svg" className="w-full hidden lg:block" alt="" />
+      <img src="./mob-line.svg" className="w-full lg:hidden" alt="" />
+      <Offers />
+      <Tailored />
+      <img src="./line.svg" className="w-full hidden lg-block" alt="" />
+      <img src="./mob-line.svg" className="w-full mt-[30px] lg:hidden" alt="" />
       <HaveQuestions />
-      <Feedback/> 
+      <img src="./line.svg" className="w-full hidden lg-block" alt="" />
+      <img src="./mob-line.svg" className="w-full lg:hidden" alt="" />
+      <Feedback />
       <Global />
     </Layout>
   )

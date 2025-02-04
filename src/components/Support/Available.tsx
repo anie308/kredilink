@@ -29,7 +29,11 @@ function Available() {
           <p>sales@kredilink.com</p>
           </div>
 
-          <p className="font-[600] underline text-[#141414] mt-[40px]">Chat with Us</p>
+          <p className="font-[600] underline text-[#141414] mt-[40px]">
+            <a href="mailto:sales@kredilink.com">
+              Chat with Us
+            </a>
+          </p>
          
         </div>
         <div className="p-[20px] bg-[#F2F7F6] rounded-[20px] flex flex-col items-start">
@@ -39,10 +43,17 @@ function Available() {
           <div className="mt-[30px]">
           <p className="text-[16px] font-[600] text-[#141414]">Call Us</p>
           <p className="text-[#141414B2] text-[14px]">Mon - Fri from 8am to 5pm</p>
-          <p>+1 (555) 000-0000</p>
+          <p>
+          +2347034736271
+
+          </p>
           </div>
 
-          <p className="font-[600] underline text-[#141414] mt-[40px]">Call Now</p>
+          <p className="font-[600] underline text-[#141414] mt-[40px]">
+          <a href="tel:+2347034736271">
+          Call Now
+            </a>
+            </p>
          
         </div>
         <div className="p-[20px] bg-[#F2F7F6] rounded-[20px] flex flex-col items-start">
@@ -52,7 +63,7 @@ function Available() {
           <div className="mt-[30px]">
           <p className="text-[16px] font-[600] text-[#141414]">Visit Us</p>
           <p className="text-[#141414B2] text-[14px]">Come say hello at our office</p>
-          <p>Your Office Address here</p>
+          <p>39 Alfred Rewane Rd, Ikoyi, Lagos</p>
           </div>
 
           <p className="font-[600] underline text-[#141414] mt-[40px]">View on Google Maps</p>

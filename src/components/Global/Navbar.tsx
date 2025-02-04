@@ -30,7 +30,7 @@ function Navbar() {
 
     ]
     return (
-        <div className="flex items-center justify-between p-0  lg:p-[20px_40px] fixed top-0 bg-white w-full z-30">
+        <div className="flex items-center justify-between p-0 shadow lg:p-[20px_40px] sticky top-0 bg-white w-full z-30">
             <div className="p-[20px] lg:p-0 flex items-center justify-between lg:justify-between w-full lg:w-fit">
                <Link to="/">
                <img className="h-[28px] lg:h-fit" src="./kr-logo.svg" alt="" /></Link>
