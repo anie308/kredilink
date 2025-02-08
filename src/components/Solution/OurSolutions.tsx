@@ -8,7 +8,7 @@ function OurSolutions() {
         <div className="w-full lg:w-[70%] mt-[20px] ">
           <div className="bg-[#F2F7F6] rounded-[10px] lg:rounded-[20px] text-black p-[20px] lg:p-[40px]">
             <div className="flex items-center w-full justify-end">
-              <img src="./treasury.svg" className="h-[50px] lg:h-[80px]" alt="" />
+              <img src="./liquid.svg" className="h-[50px] lg:h-[80px]" alt="" />
             </div>
             <div className="grid lg:grid-cols-2">
               <div>
@@ -68,7 +68,7 @@ function OurSolutions() {
 
             <div className="bg-[#F2F7F6] rounded-[10px] lg:rounded-[20px] text-black p-[20px] lg:p-[40px]">
               <div className="flex items-center w-full justify-end">
-                <img src="./treasury.svg" className="h-[50px] lg:h-[80px]" alt="" />
+                <img src="./b2b.svg" className="h-[50px] lg:h-[80px]" alt="" />
               </div>
               <p className="text-[32px] lg:text-[64px] leading-[35px] lg:leading-[68px]">B2B Payment Solutions</p>
               <p className="mt-[10px]">Streamlined payment processes designed specifically for business-to-business transactions, reducing complexity and enhancing efficiency.</p>
@@ -93,7 +93,7 @@ function OurSolutions() {
 
             <div className="bg-[#F2F7F6] rounded-[10px] lg:rounded-[20px] text-black p-[20px] lg:p-[40px]">
               <div className="flex items-center w-full justify-end">
-                <img src="./treasury.svg" className="h-[50px] lg:h-[80px]" alt="" />
+                <img src="./settl.svg" className="h-[50px] lg:h-[80px]" alt="" />
               </div>
               <p className="text-[32px] lg:text-[64px] leading-[35px] lg:leading-[68px]">Global Settlement</p>
               <p className="mt-[10px]">Rapid, secure settlement services that simplify international trade and financial transactions.</p>
@@ -121,7 +121,7 @@ function OurSolutions() {
             </div>
             <div className="bg-[#F2F7F6] rounded-[10px] lg:rounded-[20px] text-black p-[20px] lg:p-[40px]">
               <div className="flex items-center w-full justify-end">
-                <img src="./treasury.svg" className="h-[50px] lg:h-[80px]" alt="" />
+                <img src="./vault.svg" className="h-[50px] lg:h-[80px]" alt="" />
               </div>
               <p className="text-[32px] lg:text-[64px] leading-[35px] lg:leading-[68px]">Savings (Vault)</p>
               <p className="mt-[10px]">Secure digital savings solutions that offer flexibility, attractive returns, and absolute peace of mind.</p>

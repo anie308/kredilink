@@ -43,8 +43,8 @@ function Navbar() {
                 {links.map((link) => (
                     <Link className={`
                         ${activeUrl === link.href
-                            ? 'text-[#141414] font-sf-bold'
-                            : 'text-[#141414CC]'} text-[18px] font-[400]  font-sf-regular`
+                            ? 'text-[#141414] font-[500]'
+                            : 'text-[#141414CC]'} text-[18px] font-[400]`
                     } to={link.href} key={link.name}>
                         {link.name}
                     </Link>
