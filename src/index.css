@@ -14,6 +14,10 @@
 
 }
 
+.hero-bg{
+  background: url('/public/coins.png') no-repeat center center/cover;
+}
+
 .select-icon::after{
   position: absolute;
   right: 0;

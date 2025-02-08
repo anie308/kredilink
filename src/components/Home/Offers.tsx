@@ -3,8 +3,7 @@
 function Offers() {
     return (
         <div className=" flex items-center justify-center p-[40px_0px] lg:p-[100px_40px]">
-            <div className="w-full lg:w-[65%] grid lg:grid-cols-2">
-
+            <div className="w-full lg:w-[70%] grid lg:grid-cols-2">
                 <div className="flex items-center justify-end">
                     <div className="bg-[#0A183D] p-[20px] h-fit w-fit border-white lg:rounded-l-[8px]">
                         <img src="./offer.svg" className="border" alt="" />

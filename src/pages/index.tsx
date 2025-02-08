@@ -18,7 +18,8 @@ function Home() {
   return (
     <Layout>
       <div className="p-[20px_10px] lg:p-[40px]">
-        <div className="home-gradient    p-[10px] lg:p-[40px] rounded-[20px] text-white">
+        <div className="home-gradient  rounded-[20px] text-white relative">
+          <img src="/line.png" className="absolute right-0" alt="" />
           <HomeHero />
           <Mission />
           <Seamless />
