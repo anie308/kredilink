@@ -4,6 +4,24 @@
 
 @theme {
   --font-rubik: "Rubik", "sans-serif"; 
+  --font-sf-medium: "SF Medium", "sans-serif";
+  --font-sf-regular: "SF Regular", "sans-serif";
+  --font-sf-bold: "SF Bold", "sans-serif";
+}
+
+@font-face {
+  font-family: "SF Medium";
+  src: url('./fonts/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+}
+
+@font-face {
+  font-family: "SF Regular";
+  src: url('./fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
+}
+
+@font-face {
+  font-family: "SF Bold";
+  src: url('./fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
 }
 
 .v-gradient{

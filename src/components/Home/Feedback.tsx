@@ -7,43 +7,47 @@ function Feedback() {
       <p className="text-[#141414B2]"> What our clients are saying </p>
 
       <div className="flex items-center overflow-x-scroll lg:grid scrollbar lg:overflow-hidden lg:grid-cols-3 w-full lg:w-[75%] mt-[50px]">
-      <div className=" p-[10px] min-w-[430px] max-w-[430px]">
-        <p>“Kredilink transformed our international payment process. What used to take days now happens in minutes, with complete transparency.”</p>
+        <div className=" p-[10px] min-w-[430px] max-w-[430px]">
+          <p>“Kredilink transformed our international payment process. What used to take days now happens in minutes, with complete transparency.”</p>
 
-        <div className="flex items-center mt-[30px] space-x-[20px]">
-          <div className="h-[56px] w-[56px] border"></div>
-          <div>
-            <p className="font-[700]">Michael Okonkwo</p>
-            <p>CEO, Global Trade Solutions</p>
+          <div className="flex items-center mt-[30px] space-x-[20px]">
+            <div className="h-[56px] w-[56px]  rounded-[5px]">
+              <img src="./customer.svg" className="h-full w-full" alt="" />
+            </div>          <div>
+              <p className="font-[700]">Michael Okonkwo</p>
+              <p>CEO, Global Trade Solutions</p>
+            </div>
           </div>
-        </div>
         </div>
         <div className=" p-[10px] min-w-[430px] max-w-[430px]">
-        <p>"The compliance and security features are unparalleled. We feel completely confident with every transaction."</p>
+          <p>"The compliance and security features are unparalleled. We feel completely confident with every transaction."</p>
 
-        <div className="flex items-center mt-[30px] space-x-[20px]">
-          <div className="h-[56px] w-[56px] border"></div>
-          <div>
-            <p className="font-[700]"> Sandra Rowlings</p>
-            <p>CFO, ManuTech Industries</p>
+          <div className="flex items-center mt-[30px] space-x-[20px]">
+            <div className="h-[56px] w-[56px]  rounded-[5px]">
+              <img src="./customer.svg" className="h-full w-full" alt="" />
+            </div>
+            <div>
+              <p className="font-[700]"> Sandra Rowlings</p>
+              <p>CFO, ManuTech Industries</p>
+            </div>
           </div>
-        </div>
         </div>
         <div className=" p-[10px] min-w-[430px] max-w-[430px]">
-        <p>"The compliance and security features are unparalleled. We feel completely confident with every transaction."</p>
+          <p>"The compliance and security features are unparalleled. We feel completely confident with every transaction."</p>
 
-        <div className="flex items-center mt-[30px] space-x-[20px]">
-          <div className="h-[56px] w-[56px] border"></div>
-          <div>
-            <p className="font-[700]"> Sandra Rowlings</p>
-            <p>CFO, ManuTech Industries</p>
+          <div className="flex items-center mt-[30px] space-x-[20px]">
+          <div className="h-[56px] w-[56px]  rounded-[5px]">
+            <img src="./customer.svg" className="h-full w-full" alt="" />
+          </div>            <div>
+              <p className="font-[700]"> Sandra Rowlings</p>
+              <p>CFO, ManuTech Industries</p>
+            </div>
           </div>
-        </div>
         </div>
 
       </div>
     </div>
-  ) 
+  )
 }
 
 export default Feedback
