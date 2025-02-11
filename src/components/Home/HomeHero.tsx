@@ -10,7 +10,7 @@ function HomeHero() {
         <p className="text-[#1E3677] font-[600]">Get Started</p>
       </button>
 
-      <div className="mt-[150px] lg:mt-[200px] w-full lg:w-[40%] grid lg:grid-cols-3 gap-[20px] lg:gap-[40px]">
+      <div className="mt-[150px] lg:mt-[200px] w-full lg:w-[55%] grid lg:grid-cols-3 gap-[20px] lg:gap-[20px]">
                 <div className="flex flex-col items-center">
                     <p className="text-white text-center">Transaction Success Rate</p>
                     <p className="text-[40px] text-[#FFFFFFB2]">99.99%</p>
