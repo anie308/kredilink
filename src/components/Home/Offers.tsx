@@ -13,7 +13,7 @@ function Offers() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[#F2F7F6]  p-[40px_20px] lg:p-[20px] flex flex-col items-start space-y-[15px]">
+                <div className="bg-[#F2F7F6]  p-[40px_20px] lg:p-[20px] flex flex-col items-start space-y-[30px]">
                     <div>
                         <p className="text-[24px] text-[#141414]">Liquidity Provision at the Core</p>
                         <p className="text-[#141414B2]">Our primary focus is providing instant, flexible financial resources that empower businesses to move quickly and confidently. We offer rapid access to funds across multiple currencies, eliminating waiting times and giving businesses the financial agility they need to thrive.</p>

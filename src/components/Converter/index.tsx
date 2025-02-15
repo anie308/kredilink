@@ -3,6 +3,10 @@
 import { useCallback, useEffect, useState } from "react"
 import axios from "axios";
 import toast from "react-hot-toast";
+import Marquee from "react-fast-marquee";
+
+
+
 function ConverterComp() {
   const apiUrl = import.meta.env.VITE_APP_API_URL;
   const apiUrl2 = import.meta.env.VITE_APP_API_URL2;
@@ -65,14 +69,16 @@ function ConverterComp() {
     <div className="flex flex-col justify-center items-center p-[40px_20px] lg:p-[60px_40px]">
       <p className="text-[32px] lg:text-[64px] text-[#141414]">Kredilink Fiat Converter</p>
       <p className="text-[#141414B2] text-center text-[14px] lg:text-[18px]">Seamlessly bridge the world of digital and traditional currencies with our Fiat converter.</p>
-      <div className="mt-[20px] flex overflow-scroll items-center space-x-[20px] w-full lg:w-fit scrollbar">
-        <p className="text-[14px] min-w-[150px] lg:text-[18px] font-[500]">Instant conversion</p>
+      <div className="w-full lg:w-[60%]">
+      <Marquee className="mt-[20px] flex overflow-scroll items-center space-x-[20px] w-full lg:w-fit scrollbar">
+        <p className="text-[14px] min-w-[150px] lg:text-[18px] font-[500] mx-[20px]">Instant conversion</p>
         <img src="./burst.svg" className="h-[20px]" alt="" />
-        <p className="text-[14px] min-w-[250px]  lg:text-[18px] font-[500]">Comprehensive compliance checks</p>
+        <p className="text-[14px] min-w-[250px]  lg:text-[18px] font-[500] mx-[20px]">Comprehensive compliance checks</p>
         <img src="./burst.svg" className="h-[20px]" alt="" />
-        <p className="text-[14px] min-w-[150px] lg:text-[18px] font-[500]">Competitive rates </p>
+        <p className="text-[14px] min-w-[150px] lg:text-[18px] font-[500] mx-[20px]">Competitive rates </p>
         <img src="./burst.svg" className="h-[20px]" alt="" />
-        <p className="text-[14px] min-w-[150px] lg:text-[18px] font-[500]">Secure transactions</p>
+        <p className="text-[14px] min-w-[150px] lg:text-[18px] font-[500] mx-[20px]">Secure transactions</p>
+      </Marquee>
       </div>
 
 
