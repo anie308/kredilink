@@ -18,13 +18,13 @@ function Home() {
   return (
     <Layout>
       <div className="p-[20px_10px] lg:p-[40px]">
-        <div className="home-gradient  rounded-[20px] text-white relative">
+        <div className="bg-[#081537]  rounded-[20px] text-white relative">
           <img src="/line.png" className="absolute right-0" alt="" />
-          <HomeHero />
-          <Mission />
-          <Seamless />
-        </div>
+          <HomeHero />       
+        </div>    
       </div>
+      <Seamless />
+      <Mission />
       <img src="./line.svg" className="w-full hidden lg:block" alt="" />
       <img src="./mob-line.svg" className="w-full lg:hidden" alt="" />
       <Offers />
