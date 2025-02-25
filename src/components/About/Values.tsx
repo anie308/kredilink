@@ -31,7 +31,7 @@ function Values() {
                     </div>
                 </div>
                 <div className="flex items-center justify-center w-full">
-                    <img className="" src="./value.svg" alt="" />
+                    <img className="" src="./values.svg" alt="" />
                 </div>
             </div>
         </div>
