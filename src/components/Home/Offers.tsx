@@ -10,8 +10,8 @@ function Offers() {
           Elsewhere!
         </p>
       </div>
-      <div className="flex flex-col items-center mt-[50px] space-y-[50px]">
-        <div className="grid lg:grid-cols-2 gap-[40px]">
+      <div className="flex flex-col items-center mt-[50px] justify-center w-full lg:w-[90%] space-y-[100px]">
+        <div className="grid lg:grid-cols-2 gap-[40px]  ">
         <div className="h-[380px] bg-[#F2F7F6] rounded-[10px] overflow-hidden">
             <img src="./liquidd.svg" className="w-full h-full object-cover" alt="" />
           </div>

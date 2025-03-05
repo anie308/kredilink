@@ -10,7 +10,7 @@ function AboutHero() {
                 <img src="./about-hero.svg" className="h-[427px] lg:h-[530px] object-cover w-full rounded-[10px]" alt="" />
             </div>
 
-            <div className="mt-[50px] w-full lg:w-[40%] grid lg:grid-cols-3 gap-[20px] lg:gap-[40px]">
+            <div className="mt-[50px] w-full lg:w-[70%] grid lg:grid-cols-3 gap-[20px] lg:gap-[40px]">
                 <div className="flex flex-col items-center">
                     <p className="text-[#141414]">Transaction Success Rate</p>
                     <p className="text-[40px] text-[#141414B2]">99.99%</p>

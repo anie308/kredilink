@@ -6,7 +6,7 @@ function Feedback() {
       <p className="font-[500] text-[20px] lg:text-[32px] text-[#141414]">Kredlink Feedbacks</p>
       <p className="text-[#141414B2]"> What our clients are saying </p>
 
-      <div className="flex items-center overflow-x-scroll lg:grid scrollbar lg:overflow-hidden lg:grid-cols-3 w-full lg:w-[75%] mt-[50px]">
+      <div className="flex items-center overflow-x-scroll lg:grid gap-[40px] scrollbar lg:overflow-hidden lg:grid-cols-3 w-full lg:w-[85%] mt-[50px]">
         <div className=" p-[10px] min-w-[430px] max-w-[430px]">
           <p>“Kredilink transformed our international payment process. What used to take days now happens in minutes, with complete transparency.”</p>
 

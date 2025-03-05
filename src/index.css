@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-rubik: "Rubik", "sans-serif"; 
+  --font-rubik: "Montserrat", "sans-serif"; 
   --font-sf-medium: "SF Medium", "sans-serif";
   --font-sf-regular: "SF Regular", "sans-serif";
   --font-sf-bold: "SF Bold", "sans-serif";
@@ -33,7 +32,7 @@
 }
 
 .hero-bg{
-  background: url('/public/coins.png') no-repeat center center/cover;
+  background: url('/coins.png') no-repeat center center/cover;
 }
 
 .select-icon::after{
