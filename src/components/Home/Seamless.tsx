@@ -2,7 +2,7 @@
 
 function Seamless() {
     return (
-        <div className="flex flex-col items-center justify-center mt-[30px] p-[20px]">
+        <div className="flex flex-col items-center justify-center mt-[10px] lg:mt-[30px] p-[20px]">
             <p className="font-[500] text-[25px] text-center lg:text-[32px] text-[#141414]">Your Link To Seamless Payment Solutions</p>
             <div className="w-full lg:w-[80%] grid lg:grid-cols-3 my-[40px] gap-[40px]">
 
