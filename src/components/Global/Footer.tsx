@@ -1,12 +1,12 @@
 // import React from 'react'
 
 import { Link } from "react-router-dom"
-import { FaXTwitter, FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 
 function Footer() {
   return (
-    <div className="p-[40px_20px] lg:p-[40px] grid lg:grid-cols-2 bg-[#141414] text-white gap-[40px]">
+    <div className="p-[40px_40px] lg:p-[40px] grid lg:grid-cols-2 bg-[#141414] text-white gap-[40px]">
       <div className="w-full ">
         <div className="w-full lg:w-[60%]">
           <Link to="/">
@@ -50,15 +50,15 @@ function Footer() {
           </div>
         </div>
 
-        <div className="mt-[40px] flex items-center space-x-[20px]">
+        <div className="mt-[50px] flex items-center space-x-[20px]">
           <p className="font-[500]">Connect</p>
           <div className="flex items-center space-x-[10px]">
             <div className="bg-[#1E3677] p-[10px] rounded-full w-fit">
             <FaXTwitter className="text-[25px]" />
             </div>
-            <div className="bg-[#1E3677] p-[10px] rounded-full w-fit">
+            {/* <div className="bg-[#1E3677] p-[10px] rounded-full w-fit">
             <FaWhatsapp className="text-[25px]" />
-            </div>
+            </div> */}
             <div className="bg-[#1E3677] p-[10px] rounded-full w-fit">
             <FaInstagram className="text-[25px]" />
             </div>
