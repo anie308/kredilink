@@ -33,11 +33,11 @@ function Home() {
       <div className="relative">
       <Tailored />
       <img src="./line.svg" className="w-full hidden lg:block bottom-[-28px] absolute z-20 " alt="" />
-      <img src="./mob-line.svg" className="w-full mt-[30px] lg:hidden" alt="" />
+      <img src="./mob-line.svg" className="w-full mt-[30px] sm:flex md:hidden" alt="" />
       </div>
       <HaveQuestions />
-      <img src="./line.svg" className="w-full hidden lg-block" alt="" />
-      <img src="./mob-line.svg" className="w-full lg:hidden" alt="" />
+      <img src="./line.svg" className="w-full hidden lg:block" alt="" />
+      <img src="./mob-line.svg" className="w-full sm:flex md:hidden" alt="" />
       <Feedback />
       <Global />
     </Layout>
