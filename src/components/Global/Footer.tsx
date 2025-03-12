@@ -6,7 +6,7 @@ import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <div className="p-[40px_40px] lg:p-[40px] grid lg:grid-cols-2 bg-[#141414] text-white gap-[40px]">
+    <div className="p-[40px_40px] lg:p-[40px_60px] grid lg:grid-cols-2 bg-[#141414] text-white gap-[40px]">
       <div className="w-full ">
         <div className="w-full lg:w-[60%]">
           <Link to="/">
